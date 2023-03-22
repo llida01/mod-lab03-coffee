@@ -1,3 +1,4 @@
+// Copyright 2022 UNN-IASR
 #include "Automata.h"
 #include <iostream>
 #include <string>
@@ -48,7 +49,7 @@ void Automata::off() {
 }
 
 void Automata::coin(int money) {
-  if (state == WAIT or state == ACCEPT) {
+  if (state == WAIT || state == ACCEPT) {
     state = ACCEPT;
     std::cout << "\n\tDeposit money" << std::endl;
     cash += money;
@@ -60,7 +61,8 @@ void Automata::coin(int money) {
 void Automata::getMenu() {
   std::cout << "\tMenu" << std::endl;
   for (int i = 0; i < size(*menu) - 1; i++) {
-    std::cout << i << ". " << menu[i] << " - " << prices[i] << " RUB" << std::endl;
+    std::cout << i << ". " << menu[i] << " - ";
+    std::cout << prices[i] << " RUB" << std::endl;
   }
 }
 
