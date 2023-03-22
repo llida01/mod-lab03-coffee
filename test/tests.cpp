@@ -4,7 +4,8 @@
 #include "Automata.h"
 
 TEST(test1, test_off) {
-  std::string menu[] = { "Espresso", "Capuccino", "Latte", "Americano", "Raf", "Hot chocolate", "Cocoa" };
+  std::string menu[] = { "Espresso", "Capuccino", "Latte", 
+                        "Americano", "Raf", "Hot chocolate", "Cocoa" };
   int prices[] = {70, 140, 140, 130, 190, 160, 140};
   Automata automat = Automata(menu, prices);
   std::string answer = "OFF";
@@ -14,7 +15,8 @@ TEST(test1, test_off) {
 }
 
 TEST(test2, test_off) {
-  std::string menu[] = { "Espresso", "Capuccino", "Latte", "Americano", "Raf", "Hot chocolate", "Cocoa" };
+  std::string menu[] = { "Espresso", "Capuccino", "Latte", 
+                        "Americano", "Raf", "Hot chocolate", "Cocoa" };
   int prices[] = { 70, 140, 140, 130, 190, 160, 140 };
   Automata automat = Automata(menu, prices);
   std::string answer = "OFF";
@@ -28,7 +30,8 @@ TEST(test2, test_off) {
 }
 
 TEST(test3, test_off) {
-  std::string menu[] = { "Espresso", "Capuccino", "Latte", "Americano", "Raf", "Hot chocolate", "Cocoa" };
+  std::string menu[] = { "Espresso", "Capuccino", "Latte", 
+                        "Americano", "Raf", "Hot chocolate", "Cocoa" };
   int prices[] = { 70, 140, 140, 130, 190, 160, 140 };
   Automata automat = Automata(menu, prices);
   std::string answer = "OFF";
@@ -37,7 +40,8 @@ TEST(test3, test_off) {
   automat.choice(5);
   automat.check();
   automat.coin(60);
-  automat.cancel();automat.coin(100);
+  automat.cancel();
+  automat.coin(100);
   automat.choice(1);
   automat.check();
   automat.coin(40);
@@ -49,7 +53,8 @@ TEST(test3, test_off) {
 }
 
 TEST(test4, test_wait) {
-  std::string menu[] = { "Espresso", "Capuccino", "Latte", "Americano", "Raf", "Hot chocolate", "Cocoa" };
+  std::string menu[] = { "Espresso", "Capuccino", "Latte", 
+                        "Americano", "Raf", "Hot chocolate", "Cocoa" };
   int prices[] = { 70, 140, 140, 130, 190, 160, 140 };
   Automata automat = Automata(menu, prices);
   std::string answer = "WAIT";
@@ -58,7 +63,8 @@ TEST(test4, test_wait) {
 }
 
 TEST(test5, test_wait) {
-  std::string menu[] = { "Espresso", "Capuccino", "Latte", "Americano", "Raf", "Hot chocolate", "Cocoa" };
+  std::string menu[] = { "Espresso", "Capuccino", "Latte", 
+                        "Americano", "Raf", "Hot chocolate", "Cocoa" };
   int prices[] = { 70, 140, 140, 130, 190, 160, 140 };
   Automata automat = Automata(menu, prices);
   std::string answer = "WAIT";
@@ -69,7 +75,8 @@ TEST(test5, test_wait) {
 }
 
 TEST(test6, test_wait) {
-  std::string menu[] = { "Espresso", "Capuccino", "Latte", "Americano", "Raf", "Hot chocolate", "Cocoa" };
+  std::string menu[] = { "Espresso", "Capuccino", "Latte", 
+                        "Americano", "Raf", "Hot chocolate", "Cocoa" };
   int prices[] = { 70, 140, 140, 130, 190, 160, 140 };
   Automata automat = Automata(menu, prices);
   std::string answer = "WAIT";
@@ -81,7 +88,8 @@ TEST(test6, test_wait) {
 }
 
 TEST(test7, test_wait) {
-  std::string menu[] = { "Espresso", "Capuccino", "Latte", "Americano", "Raf", "Hot chocolate", "Cocoa" };
+  std::string menu[] = { "Espresso", "Capuccino", "Latte", 
+                        "Americano", "Raf", "Hot chocolate", "Cocoa" };
   int prices[] = { 70, 140, 140, 130, 190, 160, 140 };
   Automata automat = Automata(menu, prices);
   std::string answer = "WAIT";
@@ -95,7 +103,8 @@ TEST(test7, test_wait) {
 }
 
 TEST(test8, test_accept) {
-  std::string menu[] = { "Espresso", "Capuccino", "Latte", "Americano", "Raf", "Hot chocolate", "Cocoa" };
+  std::string menu[] = { "Espresso", "Capuccino", "Latte", 
+                        "Americano", "Raf", "Hot chocolate", "Cocoa" };
   int prices[] = { 70, 140, 140, 130, 190, 160, 140 };
   Automata automat = Automata(menu, prices);
   std::string answer = "ACCEPT";
@@ -105,7 +114,8 @@ TEST(test8, test_accept) {
 }
 
 TEST(test9, test_accept) {
-  std::string menu[] = { "Espresso", "Capuccino", "Latte", "Americano", "Raf", "Hot chocolate", "Cocoa" };
+  std::string menu[] = { "Espresso", "Capuccino", "Latte", 
+                        "Americano", "Raf", "Hot chocolate", "Cocoa" };
   int prices[] = { 70, 140, 140, 130, 190, 160, 140 };
   Automata automat = Automata(menu, prices);
   std::string answer = "ACCEPT";
@@ -116,7 +126,8 @@ TEST(test9, test_accept) {
 }
 
 TEST(test10, test_accept) {
-  std::string menu[] = { "Espresso", "Capuccino", "Latte", "Americano", "Raf", "Hot chocolate", "Cocoa" };
+  std::string menu[] = { "Espresso", "Capuccino", "Latte", 
+                        "Americano", "Raf", "Hot chocolate", "Cocoa" };
   int prices[] = { 70, 140, 140, 130, 190, 160, 140 };
   Automata automat = Automata(menu, prices);
   std::string answer = "ACCEPT";
@@ -128,7 +139,8 @@ TEST(test10, test_accept) {
 }
 
 TEST(test11, test_accept) {
-  std::string menu[] = { "Espresso", "Capuccino", "Latte", "Americano", "Raf", "Hot chocolate", "Cocoa" };
+  std::string menu[] = { "Espresso", "Capuccino", "Latte", 
+                        "Americano", "Raf", "Hot chocolate", "Cocoa" };
   int prices[] = { 70, 140, 140, 130, 190, 160, 140 };
   Automata automat = Automata(menu, prices);
   std::string answer = "ACCEPT";
@@ -142,7 +154,8 @@ TEST(test11, test_accept) {
 }
 
 TEST(test12, test_check) {
-  std::string menu[] = { "Espresso", "Capuccino", "Latte", "Americano", "Raf", "Hot chocolate", "Cocoa" };
+  std::string menu[] = { "Espresso", "Capuccino", "Latte", 
+                        "Americano", "Raf", "Hot chocolate", "Cocoa" };
   int prices[] = { 70, 140, 140, 130, 190, 160, 140 };
   Automata automat = Automata(menu, prices);
   std::string answer = "CHECK";
@@ -153,7 +166,8 @@ TEST(test12, test_check) {
 }
 
 TEST(test13, test_check) {
-  std::string menu[] = { "Espresso", "Capuccino", "Latte", "Americano", "Raf", "Hot chocolate", "Cocoa" };
+  std::string menu[] = { "Espresso", "Capuccino", "Latte", 
+                        "Americano", "Raf", "Hot chocolate", "Cocoa" };
   int prices[] = { 70, 140, 140, 130, 190, 160, 140 };
   Automata automat = Automata(menu, prices);
   std::string answer = "CHECK";
@@ -167,7 +181,8 @@ TEST(test13, test_check) {
 }
 
 TEST(test14, test_cook) {
-  std::string menu[] = { "espresso", "capuccino", "latte", "americano", "raf", "hot chocolate", "cocoa" };
+  std::string menu[] = { "espresso", "capuccino", "latte", 
+                        "americano", "raf", "hot chocolate", "cocoa" };
   int prices[] = { 70, 140, 140, 130, 190, 160, 140 };
   Automata automat = Automata(menu, prices);
   std::string answer = "COOK";
