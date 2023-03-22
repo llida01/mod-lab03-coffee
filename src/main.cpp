@@ -4,7 +4,7 @@
 #include <string>
 
 int main() {
-  std::string menu[] = { "Espresso", "Capuccino", "Latte", 
+  std::string menu[] = { "Espresso", "Capuccino", "Latte",
                         "Americano", "Raf", "Hot chocolate", "Cocoa"};
   int prices[] = {70, 140, 140, 130, 190, 160, 140};
   Automata automat = Automata(menu, prices);
